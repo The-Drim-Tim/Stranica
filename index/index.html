@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Drim Tim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+
+  :root {
+    --ong: #ff9419;
+  }
+  body {
+    font: 400 20px/1.8 'Roboto', sans-serif;
+    color: #777;
+  }
+
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: var(--ong);
+  }
+
+ #logo {
+  height:70px;
+  width:70px;
+  padding:0px;
+  margin: 0px;
+
+}
+  .container {
+    padding-top:5%;
+  }
+  .person {
+    border: 5px solid transparent;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .person:hover {
+    border-color: var(--ong);
+  }
+
+
+  
+  @media (min-width: 800px) {
+    .navbar-header p{
+      display: none;
+    }
+  }
+
+  .button {
+  padding: 5px 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  color: var(--ong);
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  
+}
+.button:hover {background-color:#171613 }
+
+.button:active {
+  background-color: var(--ong);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ 
+  .nav-tabs li a {
+    color: #777;
+  }
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color:var(--ong);
+    border: 0;
+    font-size: 15px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    float:right;
+  }
+  .navbar li a, .navbar {
+    color: #000 !important;
+  }
+  .navbar-brand{
+      margin:0px;
+      padding: 0px;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+    font-weight: bold;
+    height:70px;
+    
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #18181c  !important;
+    height:100%;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .nav li {
+    height:70px;
+ 
+  }
+  .home{
+      margin:0px;
+      width:100%;
+      height:25%;
+     
+  }
+
+  #home-img{
+    opacity:0.2;
+    width: 100%;
+    height:auto;
+
+  }
+
+  .home-layer{
+      position: absolute;
+      top:0%;
+      width:100%;
+      height:40%;
+      padding-top:5% ;
+      margin: auto;
+      text-align: center;
+  }
+  #uvod{
+      position: absolute;
+      left:20%;
+      top:20%;
+      width:40%;
+      padding:0;
+      margin:0;
+      text-align: right;
+      font-size:1.3em;
+      
+     
+  }
+  #home-logo{
+      position: absolute;
+      right:20%;
+      top:20%;
+      width:20%;
+      padding: 0px;
+      margin:0;
+     
+      
+    }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+ .glyphicon{
+   padding:5px;
+ }
+
+  @media (max-width: 1400px) {
+    
+    .home{
+      width:100%;
+      height:20%;
+    }
+
+    #home-logo{
+    display: none;
+      
+    }
+   
+      .navbar-header p{
+        text-align: center;
+        width:20%;
+        font-weight:bold;
+        position:absolute;
+        top:20%;
+        left:40%;
+        
+      }
+      .home-layer{
+      position: absolute;
+      top:0%;
+      right:10%;
+      width:100%;
+      height:40%;
+      padding-top:0% ;
+      margin: auto;
+      text-align: center;
+  }
+      #uvod{
+        position: absolute;
+        top: 20%;
+        left:12%;
+        margin: auto;
+        width: 80%;
+        font-size: 1em;
+        text-align:center;
+      }
+      
+  }
+  @media (max-width: 800px) {
+    
+    #logo {
+      display: none;
+    }
+    .home{
+      width:100%;
+      height:20%;
+    }
+
+    #home-logo{
+      display: none;
+      
+    }
+   
+      .navbar-header p{
+        text-align: center;
+        width:20%;
+        font-weight:bold;
+        position:absolute;
+        top:20%;
+        left:40%;
+        
+      }
+      .home-layer{
+      position: absolute;
+      top:0%;
+      right:10%;
+      width:100%;
+      height:40%;
+      padding-top:0% ;
+      margin: auto;
+      text-align: center;
+  }
+      #uvod{
+        position: absolute;
+        top: 10%;
+        left:10%;
+        width: 80%;
+        font-size: smaller;
+        text-align:center;
+        
+      }
+      
+  }
+    .profilna {
+      border-radius: 50%;
+      height: 250px;
+      width: 250px;
+      overflow: hidden;
+ 
+}
+.dark-mode {
+  background-color: #171613;
+  color: white;
+}
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p id="uvod">DRIM TIM</p>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+ 
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <a href="#myPage"><img src="img/logo_white.png" id="logo"/></a>
+    <button class="button" onclick="myFunction()">Dark mode</button>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div> 
+
+  </div>
+</nav>
+
+<div class="row home">
+<img src="img/zg.jpg" id="home-img">
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<!-- <div class="home-layer"> -->
+<p id="uvod">Svugdje u poslovnom svijetu postoje snovi, neki mali, a neki veliki. 
+  Postoje oni koji će se ostvariti i oni koji neće. Svaka osoba susrest će u svome životu jednu takvu osobu, jednog sanjara. 
+  Možda će i susresti skupinu koja ima zajednički san... No samo je jedna skupina vrijedna naziva drim </p>
+<img src="img/logo_orange.png" id="home-logo"> 
+<!-- </div> -->
+</div>
+</br><br>
+
+<div id="about" class="container text-center">
+  <h3>Drim Tim</h3>
+  <p><em>Tko smo mi?</em></p>
+  <p>Drim tim je ekipa od 5 studenata informatike osnovan 2021. godine u sklopu projekta s kolegija projektno programiranje 4. semestra
+    Upoznajte ih!
+  </p>
+  <br>
+  <div class="row-no-gutters" style="max-width:100%;">
+
+    <div class="col-sm-4" >
+      <p class="text-center"><strong>David</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="img/david.jpeg" class="profilna person" alt="Player 1" >
+      </a>
+      <div id="demo" class="collapse" >
+        <p>Tatica</p>
+        <p>Vještine: HTML, C++, Python, XML, SQL</p>
+        <p>Hobiji: Tradicionalno brijanje, tehnologija, teretana</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Davor</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="img/davor.jpeg" class="profilna person" alt="Player 2">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Meštar</p>
+        <p>Vještine: Flutter, Java, Firebase, UX</p>
+        <p>Hobiji: Čitanje, gledanje filmova, življenje života</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4" >
+      <p class="text-center"><strong>Filip</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="img/filip.jpeg" class="profilna person" alt="Player 3" >
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Lukavac</p>
+        <p>Vještine: Java, JEE tehnologije, JSON, Spring, XML, HTML, CSS, C, C++ </p>
+        <p>Hobiji:Nogomet, plivanje, partijanje</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="containter text-center">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Matija</strong></p><br>
+      <a href="#demo4" data-toggle="collapse">
+        <img src="img/matija.jpeg" class="profilna person" alt="Player 4" >
+      </a>
+      <div id="demo4" class="collapse">
+        <p>Macan</p>
+        <p>Vještine:Java, JEE tehnologije, JSON, Spring, XML, HTML, CSS, C, C++ </p>
+        <p>Hobiji: Košarka, sportski ples, trčanje</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Lovro</strong></p><br>
+      <a href="#demo5" data-toggle="collapse">
+        <img src="img/lovro.jpg" class="profilna person" alt="Player 5" >
+      </a>
+      <div id="demo5" class="collapse">
+        <p>Šaljivi</p>
+        <p>Vještine: HTML, PHP, JS, JQUERRY, XML, JSON, SQL, Lightroom</p>
+        <p>Hobiji: Muzika, skejtanje, film, čitanje, sport</p>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
+<!-- Container (SCHEDULE Section) -->
+<div id="schedule" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Rezervacije</h3>
+    <p class="text-center">Rezervirajte nas za svoj projekt<br> Potražnja je visoka, požurite!!<br><br></p>
+    <ul class="list-group">
+      <li class="list-group-item">Svibanj <span class="label label-danger">Rezervirano!</span></li>
+      <li class="list-group-item">Lipanj <span class="label label-danger">Rezervirano!</span></li>
+      <li class="list-group-item">Srpanj <span class="badge">!</span></li>
+    </ul>
+  </div>
+ 
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>Kako do nas?</em></p>
+  <div class="row">
+    <div class="col-sm-12" >
+      <strong><p>David</p></strong>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Zagreb</p>
+      <p><span class="glyphicon glyphicon-cloud"></span>Github: <a href= "https://github.com/MicrosoftTS">github.com/MicrosoftTS</a> </p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: <a href="mailto: dcolovict@tvz.hr">dcolovict@tvz.hr</a> </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <strong><p>Davor</p></strong>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Zagreb</p>
+      <p><span class="glyphicon glyphicon-cloud"></span>Github:<a href= "https://github.com/davorkomusanac"> github.com/davorkomusanac</a>  </p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: <a href="mailto: davor.komusanac@gmail.com">davor.komusanac@gmail.com</a> </p>
+    </div>
+    <div class="col-sm-6">
+      <strong><p>Matija</p></strong>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Krapina</p>
+      <p><span class="glyphicon glyphicon-cloud"></span>Github: <a href= "https://github.com/matokov17">github.com/matokov17</a></p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email:<a href="mailto: matokov17@gmail.com"> matokov17@gmail.com</a> </p>    
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <strong><p>Filip</p></strong>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Mostar</p>
+      <p><span class="glyphicon glyphicon-cloud"></span>Github:<a href= "https://github.com/Filipafk"> github.com/Filipafk</a> </p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: <a href="mailto: fmatic1@tvz.hr">fmatic1@tvz.hr</a></p>
+    </div>
+    <div class="col-sm-6">
+      <strong><p>Lovro</p></strong>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Zagreb</p>
+      <p><span class="glyphicon glyphicon-cloud"></span>Github: <a href= "https://github.com/DyingSurfer">github.com/dyingSurfer</a> </p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: <a href="mailto: lbolanca@tvz.hr">lbolanca@tvz.hr</a></p>
+    </div>
+    
+  </div>
+  <br>
+ 
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+</footer>
+
+<script>
+$(document).ready(function(){
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  
+    if (this.hash !== "") {
+
+    
+      event.preventDefault();
+
+    
+      var hash = this.hash;
+
+    
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 700, function(){
+
+       
+        window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+
+</body>
+</html>
